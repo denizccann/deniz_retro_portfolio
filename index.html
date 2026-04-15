@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Can's Cyber-Desktop | Software Analyst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="botanical-canvas"></div>
+
+<div class="os-desktop" id="os-desktop">
+
+    <div class="desktop-icon" data-target="window-projects" style="top: 20px; left: 20px;">
+        <div class="icon-img">📁</div>
+        <div class="icon-text">My_Projects</div>
+    </div>
+    <div class="desktop-icon" data-target="window-github" style="top: 130px; left: 20px;">
+        <div class="icon-img">🌐</div>
+        <div class="icon-text">GitHub.url</div>
+    </div>
+    <div class="desktop-icon" data-target="window-ie" style="top: 240px; left: 20px;">
+        <div class="icon-img">🌍</div>
+        <div class="icon-text">Search.exe</div>
+    </div>
+    <div class="desktop-icon" data-target="window-files" style="top: 350px; left: 20px;">
+        <div class="icon-img">📦</div>
+        <div class="icon-text">UserData.zip</div>
+    </div>
+
+    <div class="desktop-icon" data-target="window-tetris" style="top: 20px; left: 120px;">
+        <div class="icon-img">👾</div>
+        <div class="icon-text">Tetris.exe</div>
+    </div>
+    <div class="desktop-icon" data-target="window-pet" style="top: 130px; left: 120px;">
+        <div class="icon-img">🐾</div>
+        <div class="icon-text">Cyber_Pet.exe</div>
+    </div>
+    <div class="desktop-icon" data-target="window-sysinfo" style="top: 240px; left: 120px;">
+        <div class="icon-img">💻</div>
+        <div class="icon-text">Sys_Info</div>
+    </div>
+    <div class="desktop-icon" data-target="window-readme" style="top: 350px; left: 120px;">
+        <div class="icon-img">📄</div>
+        <div class="icon-text">README.txt</div>
+    </div>
+
+    <div class="desktop-icon" data-target="window-avatar" style="top: 20px; left: 220px;">
+        <div class="icon-img"><img src="assets/images/deniz_pixel.png" width="36" style="border-radius: 5px;" alt="Avatar" draggable="false"></div>
+        <div class="icon-text">Avatar.png</div>
+    </div>
+
+    <div class="desktop-icon" data-target="window-diary" style="top: 20px; left: 88vw;">
+        <div class="icon-img">📝</div>
+        <div class="icon-text">Diary.txt</div>
+    </div>
+    <div class="desktop-icon" data-target="window-leo" style="top: 130px; left: 88vw;">
+        <div class="icon-img">🐈</div>
+        <div class="icon-text">Leo_Pics.zip</div>
+    </div>
+    <div class="desktop-icon" data-target="window-recycle" style="top: 75vh; left: 88vw;">
+        <div class="icon-img">🗑️</div>
+        <div class="icon-text">Recycle Bin</div>
+    </div>
+
+    <div class="win95-container window-element popup-window" id="window-winamp" style="display: flex; top: 8%; right: 2%; left: auto; width: 320px; height: auto; z-index: 45;">
+        <div class="win-title-bar">
+            <div class="win-title-text">🎵 Music_Player.exe</div>
+            <div class="win-title-buttons">
+                <button class="win-btn close-btn" data-close="window-winamp">X</button>
+            </div>
+        </div>
+        <div class="win-content-area" style="background: #1a1a24; padding: 15px; border: none; overflow: hidden; height: auto;">
+            <div class="winamp-header">Cyber Player v2.0</div>
+            <div class="winamp-screen" id="winamp-text">READY... Press Play!</div>
+            <audio id="bg-music">
+                <source src="assets/music/sarkim.mp3" type="audio/mpeg">
+            </audio>
+            <div class="winamp-controls">
+                <button class="win-btn" id="btn-prev" title="Previous Track">⏮</button>
+                <button class="win-btn" id="btn-play" title="Play">▶</button>
+                <button class="win-btn" id="btn-pause" title="Pause">⏸</button>
+                <button class="win-btn" id="btn-stop" title="Stop">⏹</button>
+                <button class="win-btn" id="btn-next" title="Next Track">⏭</button>
+            </div>
+            <div style="text-align: center; margin-top: 10px; font-size: 10px; color: #ffb7b2;">
+                [ Volume: |||||||||||||| ]
+            </div>
+        </div>
+    </div>
+
+    <div class="win95-container window-element popup-window" id="window-notes" style="display: none; top: 50%; left: 2%; width: 220px; height: auto; z-index: 44; background: #fff77b; border-color: #e6c200;">
+        <div class="win-title-bar" style="background: #e6c200; color: black;">
+            <div class="win-title-text">📌 To-Do.txt</div>
+            <div class="win-title-buttons">
+                <button class="win-btn close-btn" data-close="window-notes">X</button>
+            </div>
+        </div>
+        <div class="win-content-area" style="background: transparent; border: none; font-family: 'Comic Sans MS', cursive; font-size: 15px; color: black; overflow: hidden; padding: 15px; height: auto;">
+            <ul style="list-style-type: none; padding: 0;">
+                <li>[x] Build Cyber Resume</li>
+                <li>[x] Add Cool Demos</li>
+                <li>[x] Connect Mail Server</li>
+                <li>[ ] Feed Leo 🐈</li>
+                <li>[ ] Ace that interview!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="win95-container window-element" id="main-browser" style="top: 5%; left: 16%; width: 65%; height: 90%;">
+        <div class="win-title-bar">
+            <div class="win-title-text">
+                <span style="margin-right: 5px;">💖</span>
+                Netscape Navigator - Deniz_Resume_2026.html
+            </div>
+            <div class="win-title-buttons">
+                <button class="win-btn">_</button>
+                <button class="win-btn max-btn" data-max="main-browser">□</button>
+                <button class="win-btn close-btn" data-close="main-browser" style="font-weight: bold;">X</button>
+            </div>
+        </div>
+
+        <div class="win-menu-bar" style="position: relative;">
+            <span class="menu-item" data-dropdown="menu-file"><u>F</u>ile</span>
+            <span class="menu-item" data-dropdown="menu-edit"><u>E</u>dit</span>
+            <span class="menu-item" data-dropdown="menu-view"><u>V</u>iew</span>
+            <span class="menu-item" data-dropdown="menu-go"><u>G</u>o</span>
+            <span class="menu-item" data-dropdown="menu-favorites"><u>F</u>avorites</span>
+            <span class="menu-item" data-dropdown="menu-help"><u>H</u>elp</span>
+
+            <div class="menu-dropdown" id="menu-file">
+                <div class="dropdown-item" onclick="window.print()">Print Resume...</div>
+                <div class="dropdown-item">Save Page As...</div>
+                <hr>
+                <div class="dropdown-item close-btn" data-close="main-browser">Exit</div>
+            </div>
+            <div class="menu-dropdown" id="menu-edit">
+                <div class="dropdown-item">Copy</div>
+                <div class="dropdown-item">Paste</div>
+            </div>
+            <div class="menu-dropdown" id="menu-view">
+                <div class="dropdown-item">Source Code</div>
+                <div class="dropdown-item">Reload ↻</div>
+            </div>
+            <div class="menu-dropdown" id="menu-go">
+                <div class="dropdown-item"><a href="#objective" class="smooth-scroll" style="color:black; text-decoration:none;">Go to Objective</a></div>
+                <div class="dropdown-item"><a href="#experience" class="smooth-scroll" style="color:black; text-decoration:none;">Go to Experience</a></div>
+                <div class="dropdown-item"><a href="#widgets" class="smooth-scroll" style="color:black; text-decoration:none;">Go to Demos</a></div>
+            </div>
+            <div class="menu-dropdown" id="menu-favorites">
+                <div class="dropdown-item">★ Add to Favorites</div>
+                <div class="dropdown-item"><a href="https://github.com/denizccann" target="_blank" style="color:black; text-decoration:none;">GitHub Profile</a></div>
+            </div>
+            <div class="menu-dropdown" id="menu-help">
+                <div class="dropdown-item" onclick="alert('Deniz Can Cyber-OS v4.0\nCreated: April 2026\nSystem fully operational.')">About this OS</div>
+            </div>
+        </div>
+
+        <div class="win-address-bar">
+            <span>Address:</span>
+            <input type="text" value="http://www.cyber-girls.net/deniz/portfolio" readonly>
+        </div>
+
+        <div class="win-content-area" id="resume-content">
+
+            <marquee scrollamount="6" class="retro-marquee">
+                <span style="color: #ff66b2;">✧･ﾟ: *✧･ﾟ:*</span> WELCOME TO MY CYBER RESUME! <span style="color: #ff66b2;">*:･ﾟ✧*:･ﾟ✧</span> SEEKING 2026 TECHNICAL INTERNSHIPS <span style="color: #ff66b2;">✧･ﾟ: *✧･ﾟ:*</span>
+            </marquee>
+
+            <div class="top-widget-bar">
+                <table border="1" cellpadding="3" bgcolor="#ffffff" style="font-size: 14px; font-family: Courier; border: 2px inset var(--win-border-light);">
+                    <tr><td align="center"><span style="font-weight: bold; color: var(--text-purple);">WEB HITS</span><br>Visitor #<span id="hit-counter">001355</span></td></tr>
+                </table>
+                <div class="mood-box">
+                    <b>Status:</b> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Engineering Solutions... <br>
+                    <b>Vibe:</b> Y2K Architecture
+                </div>
+            </div>
+
+            <nav id="navbar" class="retro-nav">
+                <a href="#objective" class="smooth-scroll">Objective</a> ♡
+                <a href="#skills" class="smooth-scroll">Skills</a> ♡
+                <a href="#experience" class="smooth-scroll">Experience</a> ♡
+                <a href="#projects" class="smooth-scroll">Projects</a> ♡
+                <a href="#education" class="smooth-scroll">Education</a> ♡
+                <a href="#widgets" class="smooth-scroll">Demos & Games</a> ♡
+                <a href="#contact" class="smooth-scroll">Guestbook</a>
+            </nav>
+
+            <center>
+                <h1 id="wavy-title" class="wavy-text" style="margin-bottom: 20px;">Deniz Can - Software Engineering</h1>
+
+                <table border="2" cellpadding="15" cellspacing="0" bgcolor="#fce4ec" width="95%" style="border-color: var(--win-dark-pink);">
+                    <tr>
+                        <td align="center" width="35%" bgcolor="#ffffff">
+                            <img src="assets/images/deniz_photo.jpg" alt="Deniz Can Portrait" width="200" border="4" style="border-color: var(--win-pink);">
+                        </td>
+                        <td valign="top" bgcolor="#ffffff">
+                            <div class="dos-box">
+                                C:\GIRL_BOSS> <span id="typewriter"></span><span class="cursor">_</span>
+                            </div>
+                            <ul style="list-style-type: square; color: var(--text-purple); font-family: 'MS Sans Serif', sans-serif; font-size: 16px; line-height: 1.8;">
+                                <li><b>Current:</b> Coordinator @ Infinity Mart</li>
+                                <li><b>Academics:</b> GPA: 3.63 | Dean's List Scholar</li>
+                                <li><b>Certification:</b> Cisco CCST Cybersecurity</li>
+                                <li><b>Hackathon:</b> Global Top 5 @ AIMPACT (USA)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+            <hr width="90%" size="2" color="#d8bfd8" style="margin: 30px auto; border-style: dashed;">
+
+            <a name="objective"></a>
+            <div class="section-box">
+                <h2><u>Objective</u> ⋆｡°✩</h2>
+                <p style="font-size: 18px; background: #ffffff; padding: 20px; border: 2px dashed var(--win-pink); color: var(--win-black); line-height: 1.6;">
+                    Analytical and resourceful Computer Programming and Analysis student with a strong academic foundation (<strong style="color: var(--text-purple);">3.63 GPA</strong>) and proven success in competitive environments, highlighted by a Global Top 5 placement at the international AIMPACT Hackathon. Driven by a passion for building secure, efficient, and scalable backend systems, I bring a diverse skill set spanning full-stack software development, data integrity auditing, and process automation. Currently seeking a challenging technical internship or co-op opportunity where I can apply my expertise in Python, SQL, and Object-Oriented Design to solve complex computational problems, contribute to impactful engineering projects, and further develop my capabilities as a forward-thinking software engineer.
+                </p>
+            </div>
+
+            <a name="skills"></a>
+            <div class="section-box">
+                <h2><u>Technical Arsenal</u> 💻</h2>
+                <div style="background: #ffffff; padding: 20px; border: 2px outset var(--win-pink); font-size: 16px; line-height: 1.8;">
+                    <p><b>Languages:</b> Python, Java, C# (.NET Core), C++, SQL, PHP, JavaScript (ES6+), TypeScript, Swift (iOS), Kotlin (Android), and GDScript.</p>
+                    <p><b>Data & Analytics:</b> Pandas, Plotly, Streamlit, Data Modeling, ETL Pipelines, and Professional Visualization.</p>
+                    <p><b>Hardware & IoT:</b> Robotic Coding, Sensor Integration, and Smart Home Technology standards.</p>
+                    <p><b>Architecture & Security:</b> Cybersecurity Management (Cisco Certified), Docker, Git/GitHub, Agile Development Process, RESTful APIs, and CI/CD Pipelines.</p>
+                </div>
+            </div>
+
+            <a name="experience"></a>
+            <div class="section-box">
+                <h2><u>Professional Impact</u> 🚀</h2>
+
+                <div class="exp-entry">
+                    <h3>Coordinator</h3>
+                    <p class="exp-meta">Infinity Mart | Toronto, ON | March 2026 – Present</p>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Orchestrated daily retail operations, managing workflow coordination in a fast-paced environment processing 500+ daily transactions.</li>
+                        <li>Optimized internal inventory databases, improving digital record-keeping accuracy by 85%.</li>
+                        <li>Implemented technical problem-solving strategies to reduce hardware/software downtime at checkout stations by 40%.</li>
+                        <li>Trained and supervised staff on utilizing digital management systems, enhancing overall team efficiency by 30%.</li>
+                        <li>Maintained strict adherence to data integrity protocols while processing daily financial and stock reports.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3>Freelance Web Contributor & Server</h3>
+                    <p class="exp-meta">MADO | Toronto, ON | May 2025 – Present</p>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Developed a professional, responsive business website for the General Manager, increasing the brand's online digital visibility by 60%.</li>
+                        <li>Designed and deployed a QR-code based customer feedback system, linked to a secure backend database for real-time analytics.</li>
+                        <li>Analyzed customer satisfaction data to provide actionable insights, leading to a 25% improvement in targeted service areas.</li>
+                        <li>Managed high-volume customer service operations, consistently maintaining a 98% positive feedback rate in a high-stress environment.</li>
+                        <li>Demonstrated strong multitasking and communication skills, effectively bridging technical solutions with operational needs.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3>Data & Process Automation Associate (Intern)</h3>
+                    <p class="exp-meta">ALUMINA | Tekirdağ, Turkey | June 2024 – Sept 2024</p>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Engineered automated data migration workflows to digitize over 10,000 legacy personnel records into structured MS Excel databases.</li>
+                        <li>Conducted extensive data cleansing and validation procedures, ensuring 100% data integrity and consistency prior to system migration.</li>
+                        <li>Developed visual data summaries and KPI dashboards, translating raw financial data into insights and saving management 15 hours of manual work weekly.</li>
+                        <li>Optimized office efficiency by creating digital tracking templates, improving data retrieval speed by 75%.</li>
+                        <li>Supported technical reporting for the financial department with a strict focus on compliance and data accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a name="projects"></a>
+            <div class="section-box">
+                <h2><u>Featured Engineering Projects</u> 📂</h2>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">Cyber OS Portfolio (Current Website) | Vanilla JS, CSS3, DOM Manipulation</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Engineered a fully functional, interactive retro Windows 95/Y2K simulated environment using pure JavaScript and CSS.</li>
+                        <li>Implemented complex DOM manipulation for draggable windows, dynamic z-index management, and real-time state updates.</li>
+                        <li>Developed custom algorithms for interactive demos including a playable Snake game, Tetris clone, and AJAX-powered email forms.</li>
+                        <li>Optimized CSS styling utilizing custom SVG cursors, CSS Grid/Flexbox, and GSAP for lightweight, high-performance background animations.</li>
+                        <li>Designed to achieve 100% cross-browser compatibility and responsive layout adaptation without relying on heavy frameworks.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">Self-Ctrl | AI-Powered Management Prototype | AIMPACT Hackathon</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Designed an AI-powered management prototype focused on automated risk assessment and professional data visualization.</li>
+                        <li>Ranked in the Global Top 5 among all competing international projects at the AIMPACT Hackathon (Alumni USA).</li>
+                        <li>Engineered the logic structure for evaluating risk variables, improving predictive accuracy by an estimated 65%.</li>
+                        <li>Presented the prototype to industry leaders, successfully translating complex technical architecture into business value.</li>
+                        <li>Received 8 professional development offers from industry stakeholders, companies, and CEOs due to the project's innovation.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">InsightHub: Professional Analytics Dashboard | Python (Streamlit, Plotly)</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Developed a dynamic web-based business intelligence dashboard tailored for deep performance and budget analysis.</li>
+                        <li>Implemented interactive KPI tracking modules, rendering complex datasets into easily digestible, real-time visual charts.</li>
+                        <li>Automated the reporting pipeline, successfully reducing the time required for data analysis and report generation by 90%.</li>
+                        <li>Integrated advanced Pandas data filtering, allowing end-users to dynamically sort data points by date, region, and variance.</li>
+                        <li>Secured application endpoints to ensure data privacy while maintaining a highly responsive user interface.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">Enterprise Data Integrity Suite | Python (Pandas, Openpyxl)</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Built a robust backend data pipeline designed for cleaning, parsing, and validating large-scale, unstructured datasets.</li>
+                        <li>Applied complex statistical imputation algorithms to handle missing data, ensuring operational consistency during migrations.</li>
+                        <li>Programmed automated anomaly detection scripts, successfully reducing data formatting errors by over 80%.</li>
+                        <li>Streamlined the data extraction process, creating reusable Python classes to handle varying CSV and Excel structures.</li>
+                        <li>Ensured strict adherence to data governance policies throughout the transformation lifecycle.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">Enterprise E-Commerce Data Warehouse | MySQL, Advanced SQL</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Architected and deployed a normalized 8-table relational database optimized for high-speed transactional e-commerce queries.</li>
+                        <li>Implemented automated inventory triggers and stored procedures, enhancing the accuracy of dynamic financial reporting.</li>
+                        <li>Conducted advanced market basket analysis using complex self-joins, CTEs (Common Table Expressions), and window functions.</li>
+                        <li>Designed cumulative revenue tracking queries, providing management with accurate year-to-date performance metrics.</li>
+                        <li>Optimized database indexing strategies, reducing average query execution time for large-scale joins by 45%.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">SecureLog Sentinel: Security Event Monitor | Python (Regex, OS)</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Created an automated security auditing tool designed to detect unauthorized access attempts and system vulnerabilities.</li>
+                        <li>Utilized advanced Regular Expressions (Regex) to parse high-volume server logs for specific threat signatures in real-time.</li>
+                        <li>Generated automated, audit-ready security reports perfectly aligned with industry-standard Cisco CCST guidelines.</li>
+                        <li>Implemented modular OS-level integrations to securely access and read log files without interrupting active services.</li>
+                        <li>Strengthened simulated server security posture by accurately isolating 100% of brute-force and failed-login injection tests.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-entry">
+                    <h3 style="color: var(--win-dark-pink);">Simple Princess Game | C#, Java, Godot Engine</h3>
+                    <ul class="exp-list" style="margin-left: 20px; line-height: 1.6; font-size: 16px;">
+                        <li>Participated in a Rapid Game Development Challenge, building a fully functional game prototype from scratch within 2 hours.</li>
+                        <li>Engineered core gameplay mechanics, physics interactions, and character movement using C# and GDScript logic.</li>
+                        <li>Designed state-machine logic to handle various character animations and collision detection events flawlessly.</li>
+                        <li>Optimized game loop rendering, ensuring stable 60 FPS performance despite the strict time constraints.</li>
+                        <li>Demonstrated rapid problem-solving and adaptability by prioritizing essential game features to deliver a complete product.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <table width="100%" cellpadding="15" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%" valign="top">
+                        <a name="education"></a>
+                        <div class="section-box">
+                            <h2><u>Education & Certifications</u> 🎓</h2>
+                            <div style="background: #ffffff; padding: 20px; border: 2px outset var(--win-pink); font-size: 16px; line-height: 1.8;">
+                                <p><b>George Brown Polytechnic | Toronto, ON</b><br><i>Advanced Diploma in Computer Programming and Analysis (T177) (4th semester) | GPA: 3.63 | Present</i><br>
+                                    <span style="font-size: 14px; color: var(--text-purple);">Relevant Coursework: Full Stack Development (Java/C#), Applied Machine Learning, DevOps (Docker), Mobile App Development, Systems Analysis & Design, Software QA.<br>
+                                <b>Academic Awards:</b> Consistent Dean's List placement for academic excellence.</span></p>
+
+                                <hr style="border: 1px dashed var(--win-pink); margin: 10px 0;">
+
+                                <p><b>Muğla Sıtkı Koçman University | Muğla, Turkey</b><br><i>Bachelor of Science in Software Engineering (Study Abroad) | Sep 2024 - Dec 2024</i></p>
+
+                                <hr style="border: 1px dashed var(--win-pink); margin: 10px 0;">
+
+                                <p><b>Corsica Stickney High School | SD, USA</b><br><i>High School Diploma | GPA: 4.0 | SAT: 1160</i><br>
+                                    <span style="font-size: 14px; color: var(--text-purple);"><b>Awards:</b> Received the ACES Star Student Award, Honor Roll, FCCLA Award, and the Most Volunteer Hours Award for exceptional academic performance and community service.</span></p>
+
+                                <hr style="border: 1px dashed var(--win-pink); margin: 10px 0;">
+
+                                <p><b>Certifications:</b><br>
+                                    • Cisco CCST Cybersecurity Certification<br>
+                                    • Robotic Coding Certificate (1 year course)</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <a name="widgets"></a>
+            <div class="section-box" style="background: #ffffff; padding: 25px; border: 2px outset var(--win-pink);">
+                <h2 style="border-bottom: none; text-align: center; font-size: 28px;"><u>✧ Cyber Widgets & Demos ✧</u></h2>
+
+                <div class="win-card" style="border-color: var(--win-pink); margin-top: 20px;">
+                    <div class="win-card-header" style="background: var(--win-pink); color: white; font-size: 16px; padding: 5px;">
+                        Terminal.exe [MATRIX_OVERRIDE]
+                    </div>
+                    <div class="win-card-body" style="padding: 20px; text-align: center; background: #000000;">
+                        <canvas id="matrix-canvas" width="450" height="200" style="background: black; border: 3px inset #333; max-width: 100%; display: block; margin: 0 auto;"></canvas>
+                        <p style="color: #00ff00; font-family: 'Courier New', Courier, monospace; margin-top: 10px; font-size: 14px;">> CONNECTION ESTABLISHED...</p>
+                    </div>
+                </div>
+
+                <div class="win-card" style="border-color: var(--win-pink); margin-top: 20px;">
+                    <div class="win-card-header" style="background: var(--win-pink); color: white; font-size: 16px; padding: 5px;">
+                        Cyber_Sec_Analyzer.exe [CCST_ALIGNED]
+                    </div>
+                    <div class="win-card-body" style="padding: 20px; background: #fdf5e6; text-align: center;">
+                        <p style="font-size: 16px; color: var(--text-purple); margin-bottom: 10px;"><b>Test your password strength against brute-force algorithms:</b></p>
+                        <input type="password" id="cyber-pass" placeholder="Enter password..." style="padding: 10px; width: 70%; font-size: 18px; border: 2px inset var(--win-pink); font-family: monospace;">
+                        <div style="width: 70%; margin: 15px auto; height: 20px; background: #ddd; border: 2px inset #999;">
+                            <div id="pass-meter-fill" style="width: 0%; height: 100%; background: red; transition: all 0.3s ease;"></div>
+                        </div>
+                        <p id="pass-status" style="font-weight: bold; font-family: 'Courier New', monospace; font-size: 16px; color: #d81b60;">WAITING FOR INPUT...</p>
+                    </div>
+                </div>
+
+                <div class="win-card" style="border-color: var(--win-pink); margin-top: 20px;">
+                    <div class="win-card-header" style="background: var(--win-pink); color: white; font-size: 16px; padding: 5px;">SecureLog-Sentinel Scanner Demo</div>
+                    <div class="win-card-body" style="padding: 20px;">
+                        <button class="win-btn" id="start-sentinel-btn" style="font-size: 16px; padding: 8px 20px;">EXECUTE SCANNER.EXE</button>
+                        <div id="scan-status" style="font-weight: bold; margin-top: 10px; color: var(--text-purple); font-size: 16px;">Status: IDLE</div>
+                        <table border="1" width="100%" style="margin-top: 15px; background: #ffffff; border-color: var(--win-pink);">
+                            <tr>
+                                <th bgcolor="#f8bbd0" width="50%" style="font-size: 16px;">RAW_LOGS.TXT</th>
+                                <th bgcolor="#f8bbd0" width="50%" style="font-size: 16px;">THREATS.TXT</th>
+                            </tr>
+                            <tr>
+                                <td><div id="raw-log-screen" class="dos-screen" style="background: white; color: black; border:none; height: 180px; font-size: 14px;"></div></td>
+                                <td><div id="threat-log-screen" class="dos-screen" style="background: white; border:none; color: #ff007f; height: 180px; font-size: 14px;"></div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <a name="contact"></a>
+            <div class="section-box" style="text-align: center; margin-top: 40px;">
+                <h2 style="font-size: 28px;"><u>Sign My Guestbook!</u> ✍️</h2>
+
+                <form id="contactForm" style="display: inline-block; text-align: left; background: #ffffff; padding: 30px; border: 3px outset var(--win-pink); border-radius: 5px; font-size: 18px;">
+                    Name:<br><input type="text" name="name" size="40" required style="border: 2px inset var(--win-pink); background: #fffaf0; font-size: 16px; padding: 5px;"><br><br>
+                    Email:<br><input type="email" name="email" size="40" required style="border: 2px inset var(--win-pink); background: #fffaf0; font-size: 16px; padding: 5px;"><br><br>
+                    Message:<br><textarea name="message" rows="5" cols="42" required style="border: 2px inset var(--win-pink); background: #fffaf0; font-size: 16px; padding: 5px;"></textarea><br><br>
+
+                    <input type="hidden" name="_subject" value="New message from your Cyber Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <center><button type="submit" id="submit-btn" class="win-btn" style="font-size: 18px; padding: 10px 25px;">Submit to Database</button></center>
+                    <div id="form-message" style="display:none; color: var(--text-purple); font-weight: bold; margin-top: 15px; text-align: center;">✧ Transmission Successful! Thank you! ✧</div>
+                </form>
+
+                <div style="margin-top: 30px; font-size: 18px; font-weight: bold;">
+                    <a href="https://linkedin.com/in/deniz-can-a88010349" target="_blank" style="margin-right: 20px;">[ LinkedIn ]</a>
+                    <a href="https://github.com/denizccann" target="_blank" style="margin-right: 20px;">[ GitHub ]</a>
+                    <a href="mailto:denizccan06@gmail.com">[ Email ]</a>
+                </div>
+            </div>
+
+            <div class="wavy-hire-me" title="Click to email me!">Hire this young talent!!!!</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-ie" style="display: none; top: 15%; left: 10%; width: 600px; height: 500px;">
+    <div class="win-title-bar" style="background: linear-gradient(90deg, #1e90ff, #00bfff);">
+        <div class="win-title-text">🌍 In-Site Browser - Bing Search Engine</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-ie">□</button>
+            <button class="win-btn close-btn" data-close="window-ie">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: #ffffff; padding: 0; display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: #ece9d8; padding: 8px; border-bottom: 2px solid #ccc; font-size: 14px; text-align: center; color: #555;">
+            <i>Note: Connected to Bing Search API for seamless in-site functionality.</i>
+        </div>
+        <iframe name="search-frame" id="search-frame" src="about:blank" style="width: 100%; flex-grow: 1; border: none;"></iframe>
+        <div style="padding: 15px; background: #f9f9f9; text-align: center; border-top: 2px solid #ddd;">
+            <form action="https://www.bing.com/search" method="GET" target="search-frame">
+                <input type="text" name="q" style="width: 60%; padding: 8px; font-size: 16px; border: 2px inset #999;" placeholder="Search the web inside this window...">
+                <button type="submit" class="win-btn" style="font-size: 16px; padding: 8px 20px; margin-left: 10px;">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-tetris" style="display: none; top: 10%; left: 55%; width: 340px; height: auto;">
+    <div class="win-title-bar" style="background: linear-gradient(90deg, #9c27b0, #e91e63);">
+        <div class="win-title-text">👾 Tetris_Clone.exe</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-tetris">□</button>
+            <button class="win-btn close-btn" data-close="window-tetris">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: #222; text-align: center; padding: 15px;">
+        <canvas id="tetris-game-canvas" width="200" height="400" style="background: #000; border: 3px inset #555; display: block; margin: 0 auto; outline: none;" tabindex="0"></canvas>
+        <p style="color: #ff99cc; margin-top: 10px; font-family: 'Courier New', monospace; font-size: 14px;">Score: <span id="tetris-score">0</span></p>
+        <p style="color: #ccc; font-size: 12px; margin-top: 5px;">Use ← → to move, ↑ to rotate, ↓ to drop.</p>
+        <button id="start-tetris-clone" class="win-btn" style="margin-top: 10px; background: #e91e63; color: white;">Start Game</button>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-sysinfo" style="display: none; top: 30%; left: 35%; width: 400px; height: auto;">
+    <div class="win-title-bar" style="background: linear-gradient(90deg, #607d8b, #9e9e9e);">
+        <div class="win-title-text">💻 System Properties</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-sysinfo">□</button>
+            <button class="win-btn close-btn" data-close="window-sysinfo">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: #ece9d8; padding: 20px; font-family: 'Tahoma', sans-serif; font-size: 14px;">
+        <div style="display: flex; gap: 15px; align-items: flex-start;">
+            <div style="font-size: 50px;">🖥️</div>
+            <div>
+                <p><b>System:</b> Deniz_OS 2026 Edition</p>
+                <p><b>Registered to:</b> Deniz Can</p>
+                <hr style="margin: 10px 0; border: 1px inset #ccc;">
+                <p><b>Processor:</b> George Brown Advanced Diploma (T177)</p>
+                <p><b>RAM:</b> 3.63 GPA Logic Capabilities</p>
+                <p><b>Graphics:</b> Full-Stack & UI/UX Rendering</p>
+                <p><b>Security:</b> Cisco CCST Firewall Active</p>
+                <hr style="margin: 10px 0; border: 1px inset #ccc;">
+                <p style="color: green; font-weight: bold;">Status: Ready for technical internships.</p>
+            </div>
+        </div>
+        <center><button class="win-btn close-btn" data-close="window-sysinfo" style="margin-top: 15px;">OK</button></center>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-projects" style="display: none; top: 15%; left: 20%; width: 550px; height: 400px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">📁 Exploring - My_Projects</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-projects">□</button>
+            <button class="win-btn close-btn" data-close="window-projects">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; padding: 15px; font-size: 16px;">
+        <p><b>C:\GIRL_BOSS\Projects\</b></p>
+        <ul style="list-style-type: none; margin-top: 15px; line-height: 1.8;">
+            <li>📄 <a href="https://github.com/denizccann/Enterprise-Data-Integrity-Suite" target="_blank" style="font-weight:bold;">Enterprise-Data-Integrity-Suite</a></li>
+            <li>📄 <a href="https://github.com/denizccann/InsightHub-Analytics-Dashboard" target="_blank" style="font-weight:bold;">InsightHub-Analytics-Dashboard</a></li>
+            <li>📄 <a href="https://github.com/denizccann/SecureLog-Sentinel" target="_blank" style="font-weight:bold;">SecureLog-Sentinel</a></li>
+            <li>📄 <a href="https://github.com/denizccann/selfctrl-isg-ap" target="_blank" style="font-weight:bold;">selfctrl-isg-ap</a></li>
+            <li>📄 <a href="https://github.com/denizccann/simple-princess-game" target="_blank" style="font-weight:bold;">simple-princess-game</a></li>
+            <li>📄 <a href="https://github.com/denizccann/Enterprise-SQL-Analytics" target="_blank" style="font-weight:bold;">Enterprise-SQL-Analytics</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-github" style="display: none; top: 20%; left: 30%; width: 450px; height: 300px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">🌐 Netscape - Redirecting...</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-github">□</button>
+            <button class="win-btn close-btn" data-close="window-github">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; text-align: center; padding-top: 50px;">
+        <h2 style="color: var(--win-blue); font-size: 24px;">Connecting to GitHub...</h2>
+        <a href="https://github.com/denizccann" target="_blank" class="win-btn" style="text-decoration: none; color: black; font-size: 18px; padding: 10px 20px; display:inline-block; margin-top:20px;">Launch Browser</a>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-avatar" style="display: none; top: 12%; left: 45%; width: 350px; height: 420px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">✨ Avatar.png - Paint</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-avatar">□</button>
+            <button class="win-btn close-btn" data-close="window-avatar">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: #e0e0e0; text-align: center; padding: 15px;">
+        <div style="background: white; padding: 10px; border: 2px inset gray;">
+            <img src="assets/images/deniz_pixel.png" alt="Deniz Pixel Art" style="width: 100%; image-rendering: pixelated;">
+        </div>
+        <p style="margin-top: 15px; font-weight: bold; font-family: 'Comic Sans MS', cursive;">Me in 8-bit! ☆</p>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-pet" style="display: none; top: 30%; left: 5%; width: 220px; height: auto;">
+    <div class="win-title-bar">
+        <div class="win-title-text">🐾 Cyber_Pet.exe</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-pet">□</button>
+            <button class="win-btn close-btn" data-close="window-pet">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; text-align: center; padding: 15px;">
+        <pre id="pet-face" style="font-size: 14px; color: var(--win-dark-pink); font-weight: bold;">
+  /\_/\
+ ( o.o )
+  > ^ <
+        </pre>
+        <p id="pet-status" style="font-size: 12px; margin-top: 10px;">Status: Happy! ✨</p>
+        <button id="btn-feed" class="win-btn" style="margin-top: 5px;">Feed</button>
+        <button id="btn-pet" class="win-btn" style="margin-top: 5px;">Pet</button>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-diary" style="display: none; top: 35%; left: 15%; width: 400px; height: 350px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">📝 Notepad - Diary.txt</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-diary">□</button>
+            <button class="win-btn close-btn" data-close="window-diary">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; padding: 15px; font-family: 'Courier New', monospace; font-size: 16px;">
+        <p><b>Date:</b> April 2026</p>
+        <p><b>Mood:</b> Confident (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
+        <br>
+        <p>Dear Diary,</p>
+        <p>Today I updated my portfolio. Added a maximizing feature because my talent cannot be contained in small windows. Added drag-and-drop icons because I need control.</p>
+        <p>Also, let's be honest. If a recruiter sees this simulated masterpiece, they *have* to hire me. It's written in the Cyber-Laws. It's not arrogance, it's advanced systems analysis. ✨</p>
+        <br>
+        <p>Gotta go feed my digital cat.</p>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-files" style="display: none; top: 40%; left: 25%; width: 380px; height: 300px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">📦 WinZip - UserData.zip</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-files">□</button>
+            <button class="win-btn close-btn" data-close="window-files">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; padding: 15px;">
+        <p><b>A:\> Contents of UserData.zip</b></p>
+        <ul style="list-style-type: none; margin-top: 10px; line-height: 1.6;">
+            <li>💾 C:\Program Files</li>
+            <li>💾 C:\Certificates</li>
+            <li>💾 C:\Old_Code_Bugs</li>
+            <li>💾 C:\Dean_List_Awards.exe</li>
+            <li>💾 A:\Hackathon_Top5_Trophy</li>
+        </ul>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-readme" style="display: none; top: 45%; left: 35%; width: 350px; height: 280px;">
+    <div class="win-title-bar" style="background: linear-gradient(90deg, #607d8b, #9e9e9e);">
+        <div class="win-title-text">📄 README.txt - Notepad</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-readme">□</button>
+            <button class="win-btn close-btn" data-close="window-readme">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; padding: 15px; font-family: 'Courier New', monospace;">
+        <p style="font-weight: bold; border-bottom: 1px solid black; padding-bottom: 5px;">Cyber-OS v1.0 Release Notes</p>
+        <p style="font-size: 14px; margin-top: 10px;">Known bugs:
+            <br>1. Pet.exe may become too happy when petted.
+            <br>2. Recycler Bin is perpetually empty because my code has no bugs.</p>
+        <p style="font-size: 14px; margin-top: 10px;">Created by Deniz Can. Hire me.</p>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-leo" style="display: none; top: 25%; left: 40%; width: 400px; height: 350px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">🐈 WinZip - Leo_Pics.zip</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-leo">□</button>
+            <button class="win-btn close-btn" data-close="window-leo">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; text-align: center;">
+        <img src="assets/images/leo_pixel.png" alt="My Cat Leo" width="200" style="border: 2px dashed var(--win-pink);">
+        <p style="margin-top: 15px; font-weight: bold; color: var(--text-purple);">100% Unzipped!</p>
+    </div>
+</div>
+
+<div class="win95-container window-element popup-window" id="window-recycle" style="display: none; top: 30%; left: 50%; width: 350px; height: 250px;">
+    <div class="win-title-bar">
+        <div class="win-title-text">🗑️ Recycle Bin</div>
+        <div class="win-title-buttons">
+            <button class="win-btn max-btn" data-max="window-recycle">□</button>
+            <button class="win-btn close-btn" data-close="window-recycle">X</button>
+        </div>
+    </div>
+    <div class="win-content-area" style="background: white; text-align: center; padding-top: 40px;">
+        <p style="font-size: 18px;">0 items.</p>
+        <p style="color: gray; font-size: 16px; margin-top: 15px;">Wow, such empty! My code is completely bug-free. ✨</p>
+    </div>
+</div>
+
+<div class="os-taskbar">
+    <button class="start-btn"><span style="color: #ff00ff; margin-right: 5px;">❖</span> Start</button>
+    <div class="taskbar-item active" data-target="main-browser">Deniz_Resume</div>
+    <div class="taskbar-item" data-target="window-winamp">Music_Player.exe</div>
+    <div class="taskbar-item" data-target="window-ie">Search.exe</div>
+    <div class="taskbar-time" id="os-time">12:00 PM</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
