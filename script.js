@@ -452,7 +452,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "sarkim.mp3", src: "assets/music/sarkim.mp3" },
         { name: "sarkim2.mp3", src: "assets/music/sarkim2.mp3" },
         { name: "sarkim3.mp3", src: "assets/music/sarkim3.mp3" },
-        { name: "sarkim4.mp3", src: "assets/music/sarkim4.mp3" }
+        { name: "sarkim4.mp3", src: "assets/music/sarkim4.mp3" },
+        { name: "sarkim5.mp3", src: "assets/music/sarkim5.mp3" },
+        { name: "sarkim6.mp3", src: "assets/music/sarkim6.mp3" },
+        { name: "sarkim7.mp3", src: "assets/music/sarkim7.mp3" },
+        { name: "sarkim8.mp3", src: "assets/music/sarkim8.mp3" },
+        { name: "sarkim9.mp3", src: "assets/music/sarkim9.mp3" },
+        { name: "sarkim10.mp3", src: "assets/music/sarkim10.mp3" }
     ];
     let currentTrackIndex = 0;
 
